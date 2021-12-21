@@ -1,0 +1,11 @@
+dashboard.library:
+  version: 1.x
+  css:
+    layout:
+      assets/stylesheets/dashboard.css: {}
+  js:
+    assets/scripts/dashboard.js: { minified: false }
+    assets/scripts/Chart.min.js: { minified: true }
+  dependencies:
+    - core/jquery
+    - core/drupal

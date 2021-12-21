@@ -1,0 +1,6 @@
+doane_covid_dashboard.api:
+  path: '/covid-dashboard/api/getSheet'
+  defaults:
+    _controller: '\Drupal\doane_covid_dashboard\Controller\PageController::getSheet
+  requirements:
+    _permission: 'access content'
