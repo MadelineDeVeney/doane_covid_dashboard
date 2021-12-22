@@ -1,4 +1,4 @@
-dashboard.library:
+dashboard:
   version: 1.x
   css:
     layout:

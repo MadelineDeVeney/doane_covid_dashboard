@@ -8,6 +8,15 @@
 use Drupal\Core\Routing\RouteMatchInterface;
 use Drupal\node\Entity\Node;
 
+function doane_covid_dashboard_preprocess_node(&$variables) {
+    $nid = $variables['node']->id();
+    //check whether this is the covid dashboard
+    if ($nid == "334" || $nid == "544"){
+    //attach the js library 
+    $variables['#attached']['library'][] = 'doane_covid_dashboard/dashboard'; 
+    }
+}
+
 
 /**
  * @} End of "doane_covid_dashboard".

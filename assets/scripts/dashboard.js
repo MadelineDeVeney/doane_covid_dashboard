@@ -34,7 +34,7 @@ var cumulative;
 
 
 function getDashboard() {
-    request('GET', 'https://www.doane.edu/covid-dashboard/api/getSheet/', "", function(JSONresult) {    
+    request('GET', 'https://d9test.doane.edu/covid-dashboard/api/getSheet/', "", function(JSONresult) {    
         let googleSheet = JSON.parse(JSONresult);
         //console.log(googleSheet);
         var dialDiv = document.getElementById("riskdials");
@@ -235,16 +235,16 @@ function getDashboard() {
     element.appendChild(titleDiv);
 
     if($level < 2) {
-        imgElement.src = "/covid-dashboard/images/risk-dial-1.svg";
+        imgElement.src = "/modules/custom/doane_covid_dashboard/images/risk-dial-1.svg";
     }
     else if ($level < 3) {
-        imgElement.src = "/covid-dashboard/images/risk-dial-2.svg";
+        imgElement.src = "/modules/custom/doane_covid_dashboard/images/risk-dial-2.svg";
     }
     else if ($level < 4) {
-        imgElement.src = "/covid-dashboard/images/risk-dial-3.svg";
+        imgElement.src = "/modules/custom/doane_covid_dashboard/images/risk-dial-3.svg";
     }
     else {
-        imgElement.src = "/covid-dashboard/images/risk-dial-4.svg";
+        imgElement.src = "/modules/custom/doane_covid_dashboard/images/risk-dial-4.svg";
     }
 
     element.appendChild(imgElement);
