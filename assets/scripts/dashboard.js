@@ -34,7 +34,7 @@ var cumulative;
 
 
 function getDashboard() {
-    request('GET', 'https://d9test.doane.edu/covid-dashboard/api/getSheet/', "", function(JSONresult) {    
+    request('GET', 'https://www0.doane.edu/covid-dashboard/api/getSheet/', "", function(JSONresult) {    
         let googleSheet = JSON.parse(JSONresult);
         //console.log(googleSheet);
         var dialDiv = document.getElementById("riskdials");
@@ -314,7 +314,7 @@ function convertDate(inDate, len) {
 }
 
 //Event Listeners  
-document.addEventListener("load", getDashboard());
+document.addEventListener("onload", getDashboard());
 var elements = document.getElementsByClassName("updatechart");
 for (var i = 0; i < elements.length; i++) {
     elements[i].addEventListener('click', updateChart);
