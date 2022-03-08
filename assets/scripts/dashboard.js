@@ -34,7 +34,7 @@ var cumulative;
 
 
 function getDashboard() {
-    request('GET', 'https://www0.doane.edu/covid-dashboard/api/getSheet/', "", function(JSONresult) {    
+    request('GET', 'https://web.doane.edu/covid-dashboard/api/getSheet/', "", function(JSONresult) {    
         let googleSheet = JSON.parse(JSONresult);
         //console.log(googleSheet);
         var dialDiv = document.getElementById("riskdials");
